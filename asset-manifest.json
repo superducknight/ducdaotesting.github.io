@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ducdaotesting.github.io/wedding/static/css/main.712404bf.css",
-    "main.js": "/ducdaotesting.github.io/wedding/static/js/main.21cdd1bf.js",
-    "static/js/787.9b74c651.chunk.js": "/ducdaotesting.github.io/wedding/static/js/787.9b74c651.chunk.js",
-    "static/media/Gallery_Photo_1.png": "/ducdaotesting.github.io/wedding/static/media/Gallery_Photo_1.6cc935afe301af47d5f0.png",
-    "static/media/Gallery_Photo_6.png": "/ducdaotesting.github.io/wedding/static/media/Gallery_Photo_6.0806ef8d008061ea1e9c.png",
-    "static/media/Gallery_Photo_4.png": "/ducdaotesting.github.io/wedding/static/media/Gallery_Photo_4.c4d5e380f97dca936979.png",
-    "static/media/Gallery_Photo_2.png": "/ducdaotesting.github.io/wedding/static/media/Gallery_Photo_2.4802d9bf2b80ab7091c7.png",
-    "static/media/LocationMap.png": "/ducdaotesting.github.io/wedding/static/media/LocationMap.8c8fb4ad74dfcbabbb82.png",
-    "static/media/Gallery_Photo_3.png": "/ducdaotesting.github.io/wedding/static/media/Gallery_Photo_3.6b21a6d82b3bd2e8086f.png",
-    "static/media/Gallery_Photo_5.png": "/ducdaotesting.github.io/wedding/static/media/Gallery_Photo_5.35bfdd4a27da0bb9af41.png",
-    "static/media/Title.png": "/ducdaotesting.github.io/wedding/static/media/Title.77f2dc0a287e8a5d0df3.png",
-    "index.html": "/ducdaotesting.github.io/wedding/index.html",
-    "main.712404bf.css.map": "/ducdaotesting.github.io/wedding/static/css/main.712404bf.css.map",
-    "main.21cdd1bf.js.map": "/ducdaotesting.github.io/wedding/static/js/main.21cdd1bf.js.map",
-    "787.9b74c651.chunk.js.map": "/ducdaotesting.github.io/wedding/static/js/787.9b74c651.chunk.js.map"
+    "main.css": "/ducdaotesting.github.io/static/css/main.712404bf.css",
+    "main.js": "/ducdaotesting.github.io/static/js/main.ace23ae0.js",
+    "static/js/787.9b74c651.chunk.js": "/ducdaotesting.github.io/static/js/787.9b74c651.chunk.js",
+    "static/media/Gallery_Photo_1.png": "/ducdaotesting.github.io/static/media/Gallery_Photo_1.6cc935afe301af47d5f0.png",
+    "static/media/Gallery_Photo_6.png": "/ducdaotesting.github.io/static/media/Gallery_Photo_6.0806ef8d008061ea1e9c.png",
+    "static/media/Gallery_Photo_4.png": "/ducdaotesting.github.io/static/media/Gallery_Photo_4.c4d5e380f97dca936979.png",
+    "static/media/Gallery_Photo_2.png": "/ducdaotesting.github.io/static/media/Gallery_Photo_2.4802d9bf2b80ab7091c7.png",
+    "static/media/LocationMap.png": "/ducdaotesting.github.io/static/media/LocationMap.8c8fb4ad74dfcbabbb82.png",
+    "static/media/Gallery_Photo_3.png": "/ducdaotesting.github.io/static/media/Gallery_Photo_3.6b21a6d82b3bd2e8086f.png",
+    "static/media/Gallery_Photo_5.png": "/ducdaotesting.github.io/static/media/Gallery_Photo_5.35bfdd4a27da0bb9af41.png",
+    "static/media/Title.png": "/ducdaotesting.github.io/static/media/Title.77f2dc0a287e8a5d0df3.png",
+    "index.html": "/ducdaotesting.github.io/index.html",
+    "main.712404bf.css.map": "/ducdaotesting.github.io/static/css/main.712404bf.css.map",
+    "main.ace23ae0.js.map": "/ducdaotesting.github.io/static/js/main.ace23ae0.js.map",
+    "787.9b74c651.chunk.js.map": "/ducdaotesting.github.io/static/js/787.9b74c651.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.712404bf.css",
-    "static/js/main.21cdd1bf.js"
+    "static/js/main.ace23ae0.js"
   ]
 }
