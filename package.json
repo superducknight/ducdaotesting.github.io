@@ -1,8 +1,8 @@
 {
   "name": "wedding-invitation",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://kyuhyuk.kr/wedding-invitation/v2",
+  "private": false,
+  "homepage": "https://superducknight.github.io/ducdaotesting.github.io",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@stitches/react": "^1.2.8",
@@ -25,7 +25,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -47,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
