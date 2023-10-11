@@ -1,11 +1,19 @@
 import TitleImage from './resources/Title.png';
 import LocationMapImage from './resources/LocationMap.png';
-import GalleryPhoto1 from './resources/Gallery_Photo_1.png';
-import GalleryPhoto2 from './resources/Gallery_Photo_2.png';
-import GalleryPhoto3 from './resources/Gallery_Photo_3.png';
-import GalleryPhoto4 from './resources/Gallery_Photo_4.png';
-import GalleryPhoto5 from './resources/Gallery_Photo_5.png';
-import GalleryPhoto6 from './resources/Gallery_Photo_6.png';
+// import GalleryPhoto1 from './resources/Gallery_Photo_1.png';
+// import GalleryPhoto2 from './resources/Gallery_Photo_2.png';
+// import GalleryPhoto3 from './resources/Gallery_Photo_3.png';
+// import GalleryPhoto4 from './resources/Gallery_Photo_4.png';
+// import GalleryPhoto5 from './resources/Gallery_Photo_5.png';
+// import GalleryPhoto6 from './resources/Gallery_Photo_6.png';
+
+import GalleryPhoto1 from './resources/img-1.jpg';
+import GalleryPhoto2 from './resources/img-2.jpg';
+import GalleryPhoto3 from './resources/img-3.jpg';
+import GalleryPhoto4 from './resources/img-4.jpg';
+import GalleryPhoto5 from './resources/img-5.jpg';
+import GalleryPhoto6 from './resources/img-6.jpg';
+import GalleryPhoto7 from './resources/img-7.jpg';
 
 const Configs: ConfigsType = {
   url: 'http://localhost:3000',
@@ -40,6 +48,7 @@ const Configs: ConfigsType = {
     GalleryPhoto4,
     GalleryPhoto5,
     GalleryPhoto6,
+    GalleryPhoto7,
   ],
 };
 

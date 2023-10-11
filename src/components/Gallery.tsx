@@ -1,10 +1,12 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { styled } from '@stitches/react';
-import { Col, Image, Row } from 'antd';
+import { Col, Image, Row, Spin, Space } from 'antd';
 import useOnScreen from '../hooks/useOnScreen';
 
 import { useWindowSize } from 'react-use';
 import { ConfigsType } from '../configs';
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
@@ -31,7 +33,11 @@ type GalleryProps = {
 };
 
 const Gallery = ({ config }: GalleryProps) => {
+  const [isLoading, setIsLoading] = useState(true);
   const { width } = useWindowSize();
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
 
   const ref = useRef<HTMLSelectElement>(null);
   const onScreen: boolean = useOnScreen<HTMLDivElement>(ref, '-125px');
@@ -51,11 +57,18 @@ const Gallery = ({ config }: GalleryProps) => {
       <Layout>
         <Title>Beautiful moments of ours.</Title>
       </Layout>
-      <Row gutter={[24, 24]} justify={'center'}>
+      <Row gutter={[24, 24]} justify={'center'}>  
+      <Space style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vh'}}>
+        {isLoading && (
+              <div className="loading-spinner">
+              <Spin size="large"/>
+              </div>
+            )}
+      </Space>
         {config.galleryImages.map((image, index) => (
           <Grid>
             <Col key={index} span={isPortrait ? 6 : 3}>
-              <Image width={isPortrait ? width / 4 - 10 : width / 8 - 10} src={image} />
+              <LazyLoadImage width={isPortrait ? width / 4 - 10 : width / 8 - 10} src={image} onLoad={handleImageLoad}/>
             </Col>
           </Grid>
         ))}
