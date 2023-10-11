@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/wedding/static/css/main.ca35d7fb.css",
-    "main.js": "/wedding/static/js/main.e95f0e2e.js",
+    "main.js": "/wedding/static/js/main.428d1d47.js",
     "static/js/787.9b74c651.chunk.js": "/wedding/static/js/787.9b74c651.chunk.js",
-    "static/media/Gallery_Photo_1.png": "/wedding/static/media/Gallery_Photo_1.6cc935afe301af47d5f0.png",
-    "static/media/Gallery_Photo_6.png": "/wedding/static/media/Gallery_Photo_6.0806ef8d008061ea1e9c.png",
-    "static/media/Gallery_Photo_4.png": "/wedding/static/media/Gallery_Photo_4.c4d5e380f97dca936979.png",
-    "static/media/Gallery_Photo_2.png": "/wedding/static/media/Gallery_Photo_2.4802d9bf2b80ab7091c7.png",
+    "static/media/img-6.jpg": "/wedding/static/media/img-6.d4f6973c04a9b4f2e7bd.jpg",
+    "static/media/img-4.jpg": "/wedding/static/media/img-4.2deefc38a4a06525dafc.jpg",
+    "static/media/img-7.jpg": "/wedding/static/media/img-7.03a2d3c8f2202aeddd8e.jpg",
+    "static/media/img-3.jpg": "/wedding/static/media/img-3.c1c105cb4e307f9e32fd.jpg",
+    "static/media/img-5.jpg": "/wedding/static/media/img-5.932da593254290dfab49.jpg",
+    "static/media/img-2.jpg": "/wedding/static/media/img-2.a233d235bd5c03ef2f1f.jpg",
+    "static/media/img-1.jpg": "/wedding/static/media/img-1.3065e6889779a280fa28.jpg",
     "static/media/LocationMap.png": "/wedding/static/media/LocationMap.8c8fb4ad74dfcbabbb82.png",
-    "static/media/Gallery_Photo_3.png": "/wedding/static/media/Gallery_Photo_3.6b21a6d82b3bd2e8086f.png",
-    "static/media/Gallery_Photo_5.png": "/wedding/static/media/Gallery_Photo_5.35bfdd4a27da0bb9af41.png",
     "static/media/Title.png": "/wedding/static/media/Title.77f2dc0a287e8a5d0df3.png",
     "index.html": "/wedding/index.html",
     "main.ca35d7fb.css.map": "/wedding/static/css/main.ca35d7fb.css.map",
-    "main.e95f0e2e.js.map": "/wedding/static/js/main.e95f0e2e.js.map",
+    "main.428d1d47.js.map": "/wedding/static/js/main.428d1d47.js.map",
     "787.9b74c651.chunk.js.map": "/wedding/static/js/787.9b74c651.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca35d7fb.css",
-    "static/js/main.e95f0e2e.js"
+    "static/js/main.428d1d47.js"
   ]
 }
