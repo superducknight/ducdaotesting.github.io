@@ -42,15 +42,9 @@ const Location = ({ config }: LocationProps) => {
   return (
     <Section ref={ref}>
       <Layout>
-        <Title>오시는 길</Title>
+        <Title>Wedding Address</Title>
         <SubTitle>
-          서울특별시 영등포구 은행로 30
-          <br />
-          <br />
-          국회의사당역 3번 출구로 나오셔서
-          <br />
-          도보로 6분 거리입니다.
-          <br />
+          Waiting for schedule "Address"
           <br />
           <img
             style={{ width: isPortrait ? '90%' : '60%' }}

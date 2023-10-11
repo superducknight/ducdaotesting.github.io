@@ -4,7 +4,7 @@ import TitleLayout from './components//Title';
 import Location from './components//Location';
 import CongratulatoryMoney from './components//CongratulatoryMoney';
 import Configs from './configs';
-import Share from './components/Share';
+// import Share from './components/Share';
 import { Layout } from 'antd';
 
 const { Footer } = Layout;
@@ -17,7 +17,7 @@ function App() {
       <Gallery config={Configs} />
       <Location config={Configs} />
       <CongratulatoryMoney config={Configs} />
-      <Share config={Configs} />
+      {/* <Share config={Configs} /> */}
       <Footer
         style={{
           background: '#D7CCC8',
@@ -25,7 +25,7 @@ function App() {
           textAlign: 'center',
         }}
       >
-        Copyright © 2021 KyuHyuk Lee
+        Happy Wedding 2023 - DucDao
       </Footer>
     </main>
   );

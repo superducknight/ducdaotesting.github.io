@@ -116,7 +116,7 @@ const Share = ({ config }: ShareProps) => {
   return (
     <Section>
       <Layout>
-        <Title>청첩장 공유하기</Title>
+        <Title>Share</Title>
       </Layout>
       <ButtonGroup>
         <KakaoTalkShareButton

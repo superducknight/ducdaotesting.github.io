@@ -15,7 +15,8 @@ const Configs: ConfigsType = {
   weddingLocation: 'Waiting for schedule',
   groom: {
     name: 'Duc Dao Xuan',
-    accountNumber: 'TPBANK 03204129201',
+    bank: 'TPBANK',
+    accountNumber: '03204129201',
     fatherName: 'Xuan Tuoi Dao',
     // fatherAccountNumber: '○○은행 ***-***-******',
     motherName: 'Thi Anh Nguyen',
@@ -23,6 +24,7 @@ const Configs: ConfigsType = {
   },
   bride: {
     name: 'Phuong Anh Le',
+    bank: 'bank name',
     accountNumber: '○○은행 ***-***-******',
     fatherName: 'Van Hien Le',
     // fatherAccountNumber: '○○은행 ***-***-******',
@@ -56,6 +58,7 @@ export type ConfigsType = {
 
 type Person = {
   name: string;
+  bank: string;
   accountNumber: string;
   fatherName?: string;
   fatherAccountNumber?: string;

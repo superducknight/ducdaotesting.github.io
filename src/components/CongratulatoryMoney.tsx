@@ -45,6 +45,7 @@ const Description = styled('p', {
   lineHeight: 1.75,
   opacity: 0.65,
   marginTop: '8px',
+  textAlign: 'left'
 });
 
 type CongratulatoryMoneyProps = {
@@ -58,21 +59,21 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
   return (
     <Section>
       <Layout>
-        <Title>축하의 마음을 전하세요</Title>
-        <SubTitle>축하의 마음을 담아 축의금을 전달해 보세요.</SubTitle>
+        <Title>Send your congratulations</Title>
+        <SubTitle>Please send a gift to express your congratulations.</SubTitle>
       </Layout>
       <GridLayout>
-        <HongBao title="신랑측" subTitle="계좌번호 확인" onClick={() => setGroomVisible(true)} />
-        <HongBao title="신부측" subTitle="계좌번호 확인" onClick={() => setBrideVisible(true)} />
+        <HongBao title="Groom's side" subTitle="Check account number" onClick={() => setGroomVisible(true)} />
+        <HongBao title="Bride's side" subTitle="Check account number" onClick={() => setBrideVisible(true)} />
       </GridLayout>
       <Modal
-        title={<b>신랑측 계좌번호</b>}
+        title={<b>Groom's account number</b>}
         open={groomVisible}
         onOk={() => setGroomVisible(false)}
         onCancel={() => setGroomVisible(false)}
         cancelButtonProps={{ style: { display: 'none' } }}
         okButtonProps={{ style: { display: 'none' } }}
-        footer={[<Description>계좌번호 클릭시, 붙여넣기 가능한 텍스트로 복사됩니다.</Description>]}
+        footer={[<Description>When you click on the account number, it is copied as text that can be pasted.</Description>]}
       >
         {/* <div>
           <b>부) {config.groom.fatherName}</b>
@@ -101,29 +102,29 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
           </CopyToClipboard>
         </div> */}
         <div>
-          <b>신랑 {config.groom.name}</b>
+          <b>Groom {config.groom.name}</b>
           <Divider type="vertical" />
           <CopyToClipboard text={config.groom.accountNumber}>
             <Button
               type="text"
               style={{ padding: 0, margin: 0 }}
-              onClick={() => message.success('계좌번호가 복사되었습니다.')}
+              onClick={() => message.success('The account number has been copied.')}
             >
-              {config.groom.accountNumber}
+              {config.groom.bank + " " + config.groom.accountNumber}
             </Button>
           </CopyToClipboard>
         </div>
       </Modal>
       <Modal
-        title={<b>신부측 계좌번호</b>}
+        title={<b>Bride's account number</b>}
         open={brideVisible}
         onOk={() => setBrideVisible(false)}
         onCancel={() => setBrideVisible(false)}
         cancelButtonProps={{ style: { display: 'none' } }}
         okButtonProps={{ style: { display: 'none' } }}
-        footer={[<Description>계좌번호 클릭시, 붙여넣기 가능한 텍스트로 복사됩니다.</Description>]}
+        footer={[<Description>When you click on the account number, it is copied as text that can be pasted.</Description>]}
       >
-        <div>
+        {/* <div>
           <b>부) {config.bride.fatherName}</b>
           <Divider type="vertical" />
           <CopyToClipboard text={config.bride.fatherAccountNumber || ''}>
@@ -148,17 +149,17 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
               {config.bride.motherAccountNumber || ''}
             </Button>
           </CopyToClipboard>
-        </div>
+        </div> */}
         <div>
-          <b>신부 {config.bride.name}</b>
+          <b>ride {config.bride.name}</b>
           <Divider type="vertical" />
           <CopyToClipboard text={config.bride.accountNumber}>
             <Button
               type="text"
               style={{ padding: 0, margin: 0 }}
-              onClick={() => message.success('계좌번호가 복사되었습니다.')}
+              onClick={() => message.success('The account number has been copied.')}
             >
-              {config.bride.accountNumber}
+              {config.bride.bank + " " + config.bride.accountNumber}
             </Button>
           </CopyToClipboard>
         </div>
