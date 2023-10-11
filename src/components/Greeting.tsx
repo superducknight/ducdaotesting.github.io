@@ -7,13 +7,13 @@ const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Layout = styled('div', {
   width: '100%',
-  padding: isPortrait ? '30% 0% 15% 5%' : '5% 0% 5% 10%',
+  padding: isPortrait ? '10% 5% 10% 5%' : '5% 10% 5% 10%',
 });
 
 const Title = styled('p', {
   color: '#795548',
-  width: '500%',
-  fontSize: isPortrait ? '5.5em' : '6.5em',
+  width: '100%',
+  fontSize: isPortrait ? '46px' : '6.5em',
   margin: 0,
   fontWeight: '400',
   fontFamily: 'Luxurious Script',
@@ -40,7 +40,7 @@ const Greeting = ({ config }: GreetingProps) => {
     <section
       ref={ref}
       style={{
-        height: '110vh',
+        height: 'auto',
         background: onScreen ? '#EFEBE9' : '#DADADA',
         overflow: 'hidden',
         position: 'relative',
@@ -72,9 +72,9 @@ const Greeting = ({ config }: GreetingProps) => {
           I hope you enjoy this strong beginning."
           <br />
           <br />
-          {config.groom.fatherName} · {config.groom.motherName}의 아들 {config.groom.name}
+          {config.groom.name} is the son of {config.groom.fatherName} · {config.groom.motherName}
           <br />
-          {config.bride.fatherName} · {config.bride.motherName}의 딸 {config.bride.name}
+          {config.bride.name} is the daughter of {config.bride.fatherName} · {config.bride.motherName}
         </SubTitle>
       </Layout>
     </section>

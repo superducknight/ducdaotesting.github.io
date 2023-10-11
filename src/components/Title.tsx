@@ -6,7 +6,7 @@ import { ConfigsType } from '../configs';
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Section = styled('section', {
-  height: '100%',
+  height: 'auto',
   background: '#DADADA',
   overflow: 'hidden',
   position: 'relative',
@@ -22,24 +22,33 @@ const Layout = styled('div', {
 
 const TitleLayout = styled('p', {
   width: '100%',
-  fontSize: isPortrait ? '2.5em' : '3.5em',
+  fontSize: isPortrait ? '42px' : '5.2em',
   margin: 0,
   fontWeight: '500',
 });
 
 const SubTitleLayout = styled('p', {
   width: '100%',
-  fontSize: isPortrait ? '1.2em' : '2em',
+  fontSize: isPortrait ? '46px' : '5.5em',
   margin: '24px 0',
   fontWeight: '300',
+  fontFamily: 'Luxurious Script'
 });
+
+const DateLocation = styled('p', {
+  width: '100%',
+  fontSize: isPortrait ? '24px' : '3em',
+  margin: '24px 0',
+  fontWeight: '300',
+  fontFamily: 'Noto Serif'
+})
 
 const ImageLayout = styled('div', {
   width: '100%',
   background: '#DADADA',
   bottom: '-5px',
   textAlign: 'center',
-  position: 'absolute',
+  position: 'relative',
 });
 
 const Image = styled('img', {
@@ -66,15 +75,15 @@ const Title = ({ config }: TitleProps) => {
       />
       <Section>
         <Layout>
-          <SubTitleLayout>WEDDING INVITATION</SubTitleLayout>
+          <SubTitleLayout>Wedding Invitation</SubTitleLayout>
           <TitleLayout>
             {config.groom.name} &amp; {config.bride.name}
           </TitleLayout>
-          <SubTitleLayout>
+          <DateLocation>
             {config.weddingDate}
             <br />
             {config.weddingLocation}
-          </SubTitleLayout>
+          </DateLocation>
         </Layout>
         <ImageLayout>
           <Image src={config.titleImage} alt="Wedding Invitation Title Picutre" />

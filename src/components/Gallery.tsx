@@ -10,7 +10,7 @@ const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Layout = styled('div', {
   width: '100%',
-  padding: isPortrait ? '30% 0% 15% 5%' : '5% 0% 5% 10%',
+  padding: isPortrait ? '10% 5% 10% 5%' : '5% 10% 5% 10%',
 });
 
 const Title = styled('p', {
@@ -18,8 +18,13 @@ const Title = styled('p', {
   width: '100%',
   fontSize: isPortrait ? '2.5em' : '3.5em',
   margin: 0,
-  fontWeight: '500',
+  fontWeight: '500'
 });
+
+const Grid = styled('div', {
+  // padding: isPortrait ? '1rem 0.5rem 1rem 0.5rem' : '5% 10% 5% 10%',
+  // alignContent: 'center'
+})
 
 type GalleryProps = {
   config: ConfigsType;
@@ -35,21 +40,24 @@ const Gallery = ({ config }: GalleryProps) => {
     <section
       ref={ref}
       style={{
-        height: '100vh',
+        height: 'auto',
         background: onScreen ? '#212121' : '#EFEBE9',
         overflow: 'hidden',
         position: 'relative',
         transition: 'background 1s ease-in',
+        paddingBottom: isPortrait ? '10%' : '5%'
       }}
     >
       <Layout>
-        <Title>우리의 아름다운 순간</Title>
+        <Title>Beautiful moments of ours.</Title>
       </Layout>
-      <Row gutter={[16, 16]}>
+      <Row gutter={[24, 24]} justify={'center'}>
         {config.galleryImages.map((image, index) => (
-          <Col key={index} span={isPortrait ? 6 : 3}>
-            <Image width={isPortrait ? width / 4 - 10 : width / 8 - 10} src={image} />
-          </Col>
+          <Grid>
+            <Col key={index} span={isPortrait ? 6 : 3}>
+              <Image width={isPortrait ? width / 4 - 10 : width / 8 - 10} src={image} />
+            </Col>
+          </Grid>
         ))}
       </Row>
     </section>
