@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { styled } from '@stitches/react';
-import { Col, Image, Row, Spin, Space } from 'antd';
+import { Col, Row, Spin, Space } from 'antd';
 import useOnScreen from '../hooks/useOnScreen';
 
 import { useWindowSize } from 'react-use';
@@ -22,11 +22,6 @@ const Title = styled('p', {
   margin: 0,
   fontWeight: '500'
 });
-
-const Grid = styled('div', {
-  // padding: isPortrait ? '1rem 0.5rem 1rem 0.5rem' : '5% 10% 5% 10%',
-  // alignContent: 'center'
-})
 
 type GalleryProps = {
   config: ConfigsType;
@@ -66,11 +61,9 @@ const Gallery = ({ config }: GalleryProps) => {
             )}
       </Space>
         {config.galleryImages.map((image, index) => (
-          <Grid>
-            <Col key={index} span={isPortrait ? 6 : 3}>
-              <LazyLoadImage width={isPortrait ? width / 4 - 10 : width / 8 - 10} src={image} onLoad={handleImageLoad}/>
-            </Col>
-          </Grid>
+        <Col key={index} span={isPortrait ? 6 : 3}>
+          <LazyLoadImage width={isPortrait ? width / 4 - 10 : width / 8 - 10} src={image} onLoad={handleImageLoad}/>
+        </Col>
         ))}
       </Row>
     </section>
