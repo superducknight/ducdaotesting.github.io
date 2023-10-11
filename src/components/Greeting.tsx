@@ -12,10 +12,11 @@ const Layout = styled('div', {
 
 const Title = styled('p', {
   color: '#795548',
-  width: '100%',
-  fontSize: isPortrait ? '2.5em' : '3.5em',
+  width: '500%',
+  fontSize: isPortrait ? '5.5em' : '6.5em',
   margin: 0,
-  fontWeight: '500',
+  fontWeight: '400',
+  fontFamily: 'Luxurious Script',
 });
 
 const SubTitle = styled('p', {
@@ -39,7 +40,7 @@ const Greeting = ({ config }: GreetingProps) => {
     <section
       ref={ref}
       style={{
-        height: '100vh',
+        height: '110vh',
         background: onScreen ? '#EFEBE9' : '#DADADA',
         overflow: 'hidden',
         position: 'relative',
@@ -47,23 +48,28 @@ const Greeting = ({ config }: GreetingProps) => {
       }}
     >
       <Layout>
-        <Title>결혼합니다</Title>
+        <Title>The perfect combination of</Title>
         <SubTitle>
-          봄에 태어난 {config.bride.name}
-          <br />
-          가을에 태어난 {config.groom.name}
-          <br />
-          <br />
-          관심사도, 가치관도 달랐던 두 사람
-          <br />
-          사랑으로 닮은 꼴이 되어
-          <br />
-          인생이라는 여행을 함께 떠나려 합니다.
+          The bride <b>{config.bride.name}</b> is a woman of soft and kindness. <br />
+          She has a radiant personality that warms the hearts of everyone she meets. <br />
+          <b>{config.bride.name}</b> is celebrated for her grace and her genuine love and care for others.
           <br />
           <br />
-          따뜻한 격려와 축복으로
+          The groom <b>{config.groom.name}</b> is a man of integrity and compassion. <br />
+          He possesses a strong sense of responsibility and a heart that's always open to those in need. <br />
+          <b>{config.groom.name}</b> is known for his loyalty and the unwavering support he offers to his loved ones.
           <br />
-          힘찬 출발의 자리를 빛내주시기 바랍니다.
+          <br />
+          Two individuals with different preferences and values,
+          <br />
+          We grow alike through love,
+          <br />
+          We are about to embark on a journey called life together.
+          <br />
+          <br />
+          With warm encouragement and blessings,
+          <br />
+          I hope you enjoy this strong beginning."
           <br />
           <br />
           {config.groom.fatherName} · {config.groom.motherName}의 아들 {config.groom.name}

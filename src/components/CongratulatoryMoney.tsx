@@ -74,7 +74,7 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
         okButtonProps={{ style: { display: 'none' } }}
         footer={[<Description>계좌번호 클릭시, 붙여넣기 가능한 텍스트로 복사됩니다.</Description>]}
       >
-        <div>
+        {/* <div>
           <b>부) {config.groom.fatherName}</b>
           <Divider type="vertical" />
           <CopyToClipboard text={config.groom.fatherAccountNumber || ''}>
@@ -99,7 +99,7 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
               {config.groom.motherAccountNumber || ''}
             </Button>
           </CopyToClipboard>
-        </div>
+        </div> */}
         <div>
           <b>신랑 {config.groom.name}</b>
           <Divider type="vertical" />
